@@ -225,7 +225,7 @@ input:focus {
   color:#5a5a5a
 }
 
-button {
+.button {
   padding:8px 93px;
   margin:8px 0 0;
   border:2px solid #78788c;
@@ -234,8 +234,17 @@ button {
   cursor:pointer;transition:all .3s
 }
 
-button:hover {
+.button a {
+  text-decoration: none;
+  color:#5a5a6e;
+}
+
+.button:hover {
   background:#78788c;
+  color:#fff;
+}
+
+.button:hover a {
   color:#fff;
 }
 
