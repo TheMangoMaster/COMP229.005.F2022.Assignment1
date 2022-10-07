@@ -1,11 +1,31 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!-- File Name: index.ejs
+Name: Abdul Rahman Saud
+ID: 301227450
+Date: 8 Oct 2022 -->
+
+<% include partials/header.ejs %>
+
+  <% if(title == "TheMangoMaster"){ %>
+    
+    <img src="/images/mango.png" class="banner">
+    <div class="content">
+      <h1>Welcome to <%= title %>'s Portfolio!</h1>
+      <p>Here you will find the solution to all your gaming needs!</p>
+      <p>To know more about me, head on to this link: <a href="/about">About Me</a>.</p>
+    </div>
+
+  <%} else if(title == "About Me"){ %>
+
+    <img src="/images/banner.jpg" class="banner">
+    <div class="content">
+      <h1><%= title %></h1>
+      <p>I am <%= name %>. I am a game programming student at Centennial College, currently in my 3rd semester.</p>
+      <p>I have always been interested in the way software and applications are run. Over time, I got into gaming and got intrigued in how they were developed. Taking a game development course would not only teach me game specific coding but also overall application/website development. This way I would gain broader knowledge in the IT field and enjoy doing what I love to do. Since gaming is a fast-growing industry, I see much potential for myself in this field.</p>
+      <p>You may have a look at my resume here: <a href="/files/resume.pdf" target="_blank">My Resume</a>.</p>
+    </div>
+
+  <% } %>
+  
+
+<% include partials/footer.ejs %>
+  

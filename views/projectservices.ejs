@@ -1,0 +1,76 @@
+<!-- File Name: productservices.ejs
+Name: Abdul Rahman Saud
+ID: 301227450
+Date: 8 Oct 2022 -->
+
+<% include partials/header.ejs %>
+
+<% if(title == "Projects"){ %>
+    <img src="/images/projects.png" class="banner">
+    <div class="content">
+      <h1>Welcome to my <%= title %>!</h1>
+      <table class="projects">
+        <tr>
+            <th>Projects</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Role</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>2 Cars 3D</td>
+            <td>3D Arcade Car Game</td>
+            <td>Live on Google Play</td>
+            <td>Everything</td>
+            <td><a href="https://play.google.com/store/apps/details?id=com.MangoGamingZone.TwoCars3D" target="_blank">2 Cars 3D</a></td>
+        </tr>
+        <tr>
+            <td>Necromadness</td>
+            <td>2D Top-down RPG game</td>
+            <td>Group Project Complete</td>
+            <td>Lead Software Engineer</td>
+            <td><a href="https://themangomaster.itch.io/necromadness" target="_blank">Necromadness</a></td>
+        </tr>
+        <tr>
+            <td>2 Cars Ultimate</td>
+            <td>2D Arcade Car Game</td>
+            <td>Personal Project In Works</td>
+            <td>Everything</td>
+            <td><a href="https://themangomaster.itch.io/2-cars-ultimate" target="_blank">2 Cars Ultimate</a></td>
+        </tr>
+      </table>
+    </div>
+
+  <%} else if(title == "Services"){ %>
+    
+    <img src="/images/services.jpg" class="banner">
+    <div class="content">
+      <h1>Welcome to my <%= title %>!</h1>
+      <h2>Contact me to place your order here: <a href="/contact">Contact Me</a>.</h2>
+      <table class="projects">
+        <tr>
+            <th>Services</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Game Programming</td>
+            <td>I'll help you code your game on Unity</td>
+            <td>Starting at $99.99</td>         
+        </tr>
+        <tr>
+            <td>Video Editing</td>
+            <td>I'll professionally edit your videos</td>
+            <td>Starting at $29.99</td>
+        </tr>
+        <tr>
+            <td>Logo Designing</td>
+            <td>I'll professionally design your logo</td>
+            <td>Starting at $9.99</td>
+        </tr>
+      </table>
+    </div>
+
+  <% } %>
+
+<% include partials/footer.ejs %>

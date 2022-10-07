@@ -1,8 +1,244 @@
+/* File Name: style.css
+Name: Abdul Rahman Saud
+ID: 301227450
+Date: 8 Oct 2022 */
+
+/* General css */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #CFEEFA;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  margin: 0;
+  height: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+p {
+  font-size: large;
+}
+
+/* Header css */
+header {
+  background-color: aquamarine; 
+  padding: 20px 10px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.navbar {
+  float: right; 
+  font-size: 20px; 
+  padding: 40px; 
+  text-decoration: none;
+}
+
+.navlinks {
+  padding: 12px; 
+  color: black; 
+  text-decoration: none;
+}
+
+/* Hero image css */
+.banner {
+  width: 100%; 
+}
+
+.content {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Table css */
+table {
+  width: 75%;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+.projects td, .projects th {
+  border: 1px solid #000;
+}
+
+.top {
+  min-height:100%;
+  padding-bottom: 60px;
+}
+
+.projects th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+/* Footer css */
+.site-footer
+{
+  background-color:#001712;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#acacac;
+}
+
+.container {
+  display: flex;
+}
+
+.footer-left {
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.footer-right {
+  width: 25%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  margin-bottom: auto;
+  letter-spacing:2px
+}
+
+.site-footer a
+{
+  color:#acacac;
+}
+
+.site-footer a:hover
+{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li
+{
+  display:block
+}
+
+.footer-links a
+{
+  color: #acacac;
+  text-decoration: none;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#fff;
+  text-decoration: none;
+}
+
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+/* Form css */
+.form {
+  width:50%;
+  height:550px;
+  background:rgb(232, 253, 255);
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin: 60px auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  position:relative;
+  text-align: center;
+}
+
+.form h2 {
+  margin:10px auto;
+  padding-bottom:10px;
+  width:180px;color:#78788c;
+  border-bottom:3px solid #78788c
+}
+
+.form input {
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2
+}
+
+input:focus {
+  border-bottom:2px solid #78788c
+}
+
+.form p {
+  font-size:14px;
+  color:#5a5a5a
+}
+
+.form p:before {
+  text-align: left;
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+
+button {
+  padding:8px 93px;
+  margin:8px 0 0;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;transition:all .3s
+}
+
+button:hover {
+  background:#78788c;
+  color:#fff;
+}
+
+span {
+  margin:0 5px 0 15px
 }
