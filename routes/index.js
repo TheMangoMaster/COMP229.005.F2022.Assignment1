@@ -5,52 +5,21 @@
 
 var express = require('express');
 var router = express.Router();
+let controlerIndex = require('../controllers/index.controller');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', 
-  { 
-    title: 'TheMangoMaster',
-    name: 'Abdul Rahman Saud', 
-  }
-  );
-});
+router.get('/', controlerIndex.home);
 
 // GET about page
-router.get('/about', function(req, res, next) {
-  res.render('index', 
-  { 
-    title: 'About Me',
-    name: 'Abdul Rahman Saud' 
-  }
-  );
-});
+router.get('/about', controlerIndex.about);
 
 // GET projects page
-router.get('/projects', function(req, res, next) {
-  res.render('projectservices', 
-  { 
-    title: 'Projects' 
-  }
-  );
-});
+router.get('/projects', controlerIndex.projects);
 
 // GET services page
-router.get('/services', function(req, res, next) {
-  res.render('projectservices', 
-  { 
-    title: 'Services' 
-  }
-  );
-});
+router.get('/services', controlerIndex.services);
 
 // GET contact page
-router.get('/contact', function(req, res, next) {
-  res.render('contact', 
-  { 
-    title: 'Contact Me' 
-  }
-  );
-});
+router.get('/contact', controlerIndex.contact);
 
 module.exports = router;
