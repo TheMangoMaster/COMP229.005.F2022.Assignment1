@@ -36,7 +36,7 @@ header {
 }
 
 .navbar {
-  float: right; 
+  float: right;
   font-size: 20px; 
   padding: 40px; 
   text-decoration: none;
@@ -250,4 +250,8 @@ input:focus {
 
 span {
   margin:0 5px 0 15px
+}
+
+.dropdown {
+  list-style: none;
 }

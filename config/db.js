@@ -1,4 +1,4 @@
-let atlasDB = "mongodb+srv://dbuserassignment2:lF22U9WyYeESov6L@cluster005assignment2.bjmjcrd.mongodb.net/?retryWrites=true&w=majority";
+let atlasDB = "mongodb+srv://dbuserassignment2:lF22U9WyYeESov6L@cluster005assignment2.bjmjcrd.mongodb.net/business?retryWrites=true&w=majority";
 
 // Database setup
 let mongoose = require('mongoose');

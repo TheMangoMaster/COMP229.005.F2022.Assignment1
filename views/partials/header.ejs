@@ -7,6 +7,7 @@ Date: 8 Oct 2022 -->
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -21,6 +22,17 @@ Date: 8 Oct 2022 -->
             <a href="/projects" class="navlinks">PROJECTS</a>
             <a href="/services" class="navlinks">SERVICES</a>
             <a href="/contact" class="navlinks">CONTACT</a>
+            <li class="nav-item dropdown">
+              <% if (title == "Business List" || title == "Add a new Item") { %>
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+              <% } else { %>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Business</a>
+              <% } %>       
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/business/list">Business List</a></li>
+                <li><a class="dropdown-item" href="/business/add">Add a new Item</a></li>
+              </ul>
+            </li>
             </div>
         </header>
         
